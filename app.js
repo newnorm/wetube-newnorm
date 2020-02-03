@@ -8,20 +8,12 @@ import userRouter from "./routers/userRouter";
 import videoRouter from "./routers/videoRouter";
 import globalRouter from "./routers/globalRouter";
 import routes from "./routes";
-<<<<<<< HEAD
 
 // express framework execute
 const app = express();
 
-// pug
+// pug view engine 
 app.set("view engine", "pug");
-=======
-
-// express framework execute
-const app = express();
-
-
->>>>>>> 412d39938197fe09746aa5e41387b0d9decf5219
 // middlewares
 app.use(cookieParser()); //cookie 전달받는 미들웨어
 app.use(bodyParser.json()); // 클라이언트로부터 form 이나 json으로 전달된 정보 검사
