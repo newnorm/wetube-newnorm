@@ -12,7 +12,8 @@ import routes from "./routes";
 // express framework execute
 const app = express();
 
-
+// pug
+app.set("view engine", "pug");
 // middlewares
 app.use(cookieParser()); //cookie 전달받는 미들웨어
 app.use(bodyParser.json()); // 클라이언트로부터 form 이나 json으로 전달된 정보 검사
