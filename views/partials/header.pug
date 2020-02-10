@@ -3,6 +3,9 @@ header.header
         a(href=routes.home)
             i.fab.fa-youtube
     .header__cloumn
+        form(action=routes.search, method="get")
+            input(type="text", placeholder="Search by term...", name="term")
+    .header__cloumn
         ul  
             li
                 a(href=routes.join) Join
