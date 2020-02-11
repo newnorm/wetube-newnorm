@@ -17,7 +17,7 @@ app.use(helmet()); // 안전성 증가시키는 미들웨어
 // pug view engine 
 app.set("view engine", "pug");
 app.use(cookieParser()); //cookie 전달받는 미들웨어
-app.use(bodyParser.json()); // 클라이언트로부터 form 이나 json으로 전달된 정보 검사
+app.use(bodyParser.json()); // 클라이언트로부터 form 이나 json으로 전달된 정보 검사, 가입과 로그인 정보도 받아옴 
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(morgan("dev")); // 어플리케이션에서 발생하는 일들의로그를 기록하는 미들웨어
 app.use(localsMiddleware);
